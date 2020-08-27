@@ -19,7 +19,9 @@ class HomePage extends StatelessWidget {
         actions: [ Padding(
           padding: const EdgeInsets.only(right: 14),
           child: IconButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushNamed(context, '/side_menu');
+              },
               icon: Image(image: AssetImage('assets/img/union.png'),),
             ),
         ),
